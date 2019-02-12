@@ -1,16 +1,16 @@
 # Bitcoin SV docker image
 
-[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-bitcoin-sv/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-bitcoin-sv)
+This is unofficial Bitcoin SV docker image.
+
+It is being used internally at Coin Metrics, and is published in the hope it will be useful, but without any warranty. No support is available. You are using it at your own risk.
 
 ## Using image
+
+[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-bitcoin-sv/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-bitcoin-sv)
 
 ```
 docker pull quay.io/coinmetrics/fullnode-bitcoin-sv:<version>
 ```
-
-## Support
-
-This image is being used internally at Coin Metrics. No support is available. You are using it at your own risk.
 
 ## Security
 
