@@ -10,7 +10,7 @@ RUN set -ex; \
 
 ARG VERSION
 
-RUN curl -L https://github.com/bitcoin-sv/bitcoin-sv/releases/download/v${VERSION}/bitcoin-sv-${VERSION}-x86_64-linux-gnu.tar.gz | tar -xz --strip-components=1 -C /
+RUN curl -L https://download.bitcoinsv.io/bitcoinsv/${VERSION}/bitcoin-sv-${VERSION}-x86_64-linux-gnu.tar.gz | tar -xz --strip-components=1 -C /
 
 RUN useradd -m -u 1000 -s /bin/bash runner
 USER runner

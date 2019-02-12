@@ -14,7 +14,7 @@ docker pull quay.io/coinmetrics/fullnode-bitcoin-sv:<version>
 
 ## Security
 
-This image uses official binaries from Releases section of https://github.com/bitcoin-sv/bitcoin-sv.
+This image uses official binaries from https://download.bitcoinsv.io/.
 
 Image is built on shared Gitlab CI runners provided by Gitlab.com. [CI logs](https://gitlab.com/coinmetrics/fullnodes/bitcoin-sv/pipelines)
 
