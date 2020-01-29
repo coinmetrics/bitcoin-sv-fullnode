@@ -25,8 +25,11 @@ ARG VERSION
 
 RUN git clone --depth=1 --branch=v${VERSION} https://github.com/bitcoin-sv/bitcoin-sv.git
 
+COPY fix_json.patch /home/builder/fix_json.patch
+
 RUN set -ex; \
 	cd bitcoin-sv; \
+	patch -p1 < /home/builder/fix_json.patch; \
 	./autogen.sh; \
 	./configure --prefix=/home/builder/prefix --disable-shared --disable-wallet --disable-bench --disable-tests; \
 	make -j$(nproc); \
